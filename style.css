@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*menú hamburguesa que desaparece con responsive*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6em;
+  border: 1px solid #faf8f8;
+  background-color: #4b4848;
+  font-family: "Orbitron", Verdana, Geneva, Tahoma, sans-serif; }
+  header .logo {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    height: 4em;
+    background-color: #faf8f8;
+    border: 1px solid #4b4848;
+    color: #6078ea; }
+    header .logo h1 {
+      padding: 1em;
+      color: #6078ea; }
+  header nav {
+    background-color: #faf8f8;
+    border: 2px solid #4b4848; }
+    header nav ul {
+      display: flex;
+      justify-content: center; }
+      header nav ul li {
+        padding: 1em;
+        list-style: none;
+        color: #6078ea;
+        font-weight: bold;
+        font-size: 80%; }
+        header nav ul li:hover {
+          text-decoration: overline;
+          color: #17ead9; }
+
+.contenedor {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 100vh;
+  border: 1px solid #4b4848; }
+  .contenedor aside {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 20vw;
+    background-color: #4b4848;
+    padding: 1em; }
+    .contenedor aside .titulo {
+      padding: 1em; }
+      .contenedor aside .titulo h2 {
+        color: #17ead9;
+        font-family: "Orbitron", Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        text-align: center; }
+    .contenedor aside .links {
+      position: sticky;
+      top: 1%; }
+      .contenedor aside .links ul li {
+        background-color: #faf8f8;
+        padding: 1.5em;
+        text-align: center;
+        list-style: none;
+        color: #4b4848;
+        font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+        font-weight: bolder; }
+        .contenedor aside .links ul li:hover {
+          text-decoration: overline;
+          color: #17ead9; }
+  .contenedor main {
+    width: 80vw;
+    background-color: #faf8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em; }
+    .contenedor main .titulo {
+      padding: 1em; }
+      .contenedor main .titulo h2 {
+        color: #6078ea;
+        font-family: "Orbitron", Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-large;
+        font-weight: bolder; }
+    .contenedor main .post {
+      display: flex;
+      flex-wrap: column wrap;
+      justify-content: center;
+      align-content: center;
+      width: 90%;
+      padding: 1em;
+      border: 1px solid #6078ea; }
+      .contenedor main .post .foto {
+        width: 50%; }
+        .contenedor main .post .foto img {
+          width: 100%; }
+      .contenedor main .post .contenido {
+        width: 50%;
+        padding: 0 1em;
+        text-align: justify;
+        color: #4b4848;
+        font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 3em;
+  border: 1px solid #faf8f8;
+  background-color: #4b4848;
+  color: #17ead9; }
+  footer div p {
+    padding: 1em; }
+  footer .redes {
+    padding: 1em; }
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url(./fuentes/Orbitron-VariableFont_wght.ttf); }
+@font-face {
+  font-family: 'Raleway';
+  src: url(./fuentes/Raleway-VariableFont_wght.ttf); }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,116 @@
+.contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+    border: 1px solid $color-fondo;
+
+    aside {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        width: 20vw;
+        background-color: $color-fondo;
+        padding: 1em;
+
+        .titulo {
+            padding: 1em;
+
+            h2 {
+                color: $color-secundario;
+                font-family: $fuente-t;
+                font-size: large;
+                text-align: center;
+            }
+        }
+
+        .links {
+            position: sticky;
+            top: 1%;
+            
+            ul {
+                
+                li {
+                    background-color: $color-terceario;
+                    padding: 1.5em;
+                    text-align: center;
+                    list-style: none;
+                    color: $color-fondo;
+                    font-family: $fuente-c;
+                    font-size: medium;
+                    font-weight: bolder;
+
+                    &:hover {
+                        text-decoration: overline;
+                        color: $color-secundario;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        width: 80vw;
+        background-color: $color-terceario;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+
+        .titulo {
+            padding: 1em;
+
+            h2 {
+                color: $color-primario;
+                font-family: $fuente-t;
+                font-size: xx-large;
+                font-weight: bolder;
+            }
+        }
+
+        .post {
+            display: flex;
+            flex-wrap: column wrap;
+            justify-content: center;
+            align-content: center;
+            width: 90%;
+            padding: 1em;
+            border: 1px solid $color-primario;
+
+            .foto {
+                width: 50%;
+
+               img {
+                  width: 100%;
+               }
+            }
+
+            .contenido {
+                width: 50%;
+                padding: 0 1em;
+                text-align: justify;
+                color: $color-fondo;
+                font-family: $fuente-c;
+                font-size: medium;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    border: 1px solid $color-terceario;
+    background-color: $color-fondo;
+    color: $color-secundario;
+
+    div {
+        p {
+            padding: 1em;
+        }
+    }
+
+    .redes {
+        padding: 1em;
+    }
+}

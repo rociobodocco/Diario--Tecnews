@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    border: 1px solid $color-terceario;
+    background-color: $color-fondo;
+    font-family: $fuente-t;
+    
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        height: 4em;
+        background-color: $color-terceario;
+        border: 1px solid $color-fondo;
+        color: $color-primario;
+
+        h1 {
+            padding: 1em;
+            color: $color-primario;
+        }
+    }
+
+    nav {
+        
+        background-color: $color-terceario;
+        border: 2px solid $color-fondo;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            
+            li {
+                padding: 1em;
+                list-style: none;
+                color: $color-primario;
+                font-weight: bold;
+                font-size: 80%;
+
+                &:hover {
+                    text-decoration: overline;
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}

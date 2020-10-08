@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'variables';
+@import 'cabecera';
+@import 'principal';
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url(./fuentes/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(./fuentes/Raleway-VariableFont_wght.ttf);
+}
